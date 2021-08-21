@@ -51,6 +51,7 @@ function renderSquare() {
         item.innerHTML = square[i];
     }
 
+    checkGame();
 };
 
 function renderInfo() {
@@ -62,4 +63,8 @@ function renderInfo() {
 function togglePlayer() {
     player = (player === 'x') ? 'o' : 'x';
     renderInfo();
+};
+
+function checkGame() {
+    
 }
