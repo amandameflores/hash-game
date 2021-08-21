@@ -14,5 +14,7 @@ document.querySelector('.reset').addEventListener('click', reset)
 
 //Functions
 function reset() {
-    
+    warning = '';
+
+    let random = Math.floor(Math.random() * 2);
 };
