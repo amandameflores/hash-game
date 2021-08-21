@@ -18,4 +18,21 @@ function reset() {
 
     let random = Math.floor(Math.random() * 2);
     player = (random === 0) ? 'x' : 'o';
+
+    for(let i in square) {
+        square[i] = '';
+    }
+
+    playing = true;
+
+    renderSquare();
+    renderInfo();
+};
+
+function renderSquare() {
+
+};
+
+function renderInfo() {
+
 };
