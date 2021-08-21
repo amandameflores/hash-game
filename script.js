@@ -20,6 +20,7 @@ document.querySelectorAll('.item').forEach(item => {
 //Functions
 
 function itemClick(event) {
+    let item = event.target.getAttribute('data-item');
 
 
 };
