@@ -12,7 +12,8 @@ let playing = false;
 reset();
 
 //Events
-document.querySelector('.reset').addEventListener('click', reset)
+document.querySelector('.reset').addEventListener('click', reset);
+document.querySelector('div[data-item=a1]').addEventListener('click', itemClick);
 
 //Functions
 function reset() {
