@@ -9,6 +9,8 @@ let player = '';
 let warning = '';
 let playing = false;
 
+reset();
+
 //Events
 document.querySelector('.reset').addEventListener('click', reset)
 
@@ -30,6 +32,11 @@ function reset() {
 };
 
 function renderSquare() {
+    for(let i in square){
+        console.log('ITEM: ', i);
+        let item = document.querySelector(`div[data-item=${i}]`);
+
+    }
 
 };
 
