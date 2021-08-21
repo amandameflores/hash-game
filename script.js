@@ -33,8 +33,12 @@ function reset() {
 
 function renderSquare() {
     for(let i in square){
-        console.log('ITEM: ', i);
         let item = document.querySelector(`div[data-item=${i}]`);
+        if(square[i] !== '') {
+            item.innerHTML = square[i];
+        } else {
+            item.innerHTML = '';
+        }
 
     }
 
