@@ -28,7 +28,7 @@ function itemClick(event) {
         square[item] = player;
         renderSquare();
         togglePlayer();
-    }
+    };
 
 };
 
@@ -40,7 +40,7 @@ function reset() {
 
     for(let i in square) {
         square[i] = '';
-    }
+    };
 
     playing = true;
 
@@ -52,7 +52,7 @@ function renderSquare() {
     for(let i in square){
         let item = document.querySelector(`div[data-item=${i}]`);
         item.innerHTML = square[i];
-    }
+    };
 
     checkGame();
 };
@@ -78,7 +78,7 @@ function checkGame() {
     } else if( isFull() ){
         warning = 'It is a draw!';
         playing = false;
-    }
+    };
 };
 
 function checkWinnerFor(player) {
