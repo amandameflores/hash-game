@@ -11,14 +11,17 @@ let playing = false;
 
 reset();
 
+
+
 //Events
 document.querySelector('.reset').addEventListener('click', reset);
 document.querySelectorAll('.item').forEach(item => {
     item.addEventListener('click', itemClick);
 });
 
-//Functions
 
+
+//Functions
 function itemClick(event) {
     let item = event.target.getAttribute('data-item');
     if (square[item] === ''){
@@ -66,5 +69,15 @@ function togglePlayer() {
 };
 
 function checkGame() {
-    
+    if( checkWinnerFor('x') ){
+        warning = 'O "x" venceu';
+        playing = false;
+    } else if( checkWinnerFor('o') ){
+        warning = 'O "o" venceu';
+        playing = false;
+    } else if( isFull() ){
+        warning = 'Empate';
+        playing = false;
+    }
+
 }
