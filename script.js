@@ -70,13 +70,13 @@ function togglePlayer() {
 
 function checkGame() {
     if( checkWinnerFor('x') ){
-        warning = 'O "x" venceu';
+        warning = '"X" won!';
         playing = false;
     } else if( checkWinnerFor('o') ){
-        warning = 'O "o" venceu';
+        warning = '"O" won!';
         playing = false;
     } else if( isFull() ){
-        warning = 'Empate';
+        warning = 'It is a draw!';
         playing = false;
     }
 };
@@ -112,6 +112,6 @@ function isFull() {
             return false;
         };
     };
-    
+
     return true;
 };
